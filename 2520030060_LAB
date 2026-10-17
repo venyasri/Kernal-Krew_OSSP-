@@ -1,0 +1,47 @@
+1.	Write a C program to implement Round Robin CPU scheduling using a given time quantum and calculate waiting time and turnaround time. 
+Outout
+Enter number of processes: 7
+Enter burst time for P1: 9
+Enter burst time for P2: 8
+Enter burst time for P3: 6
+Enter burst time for P4: 34
+Enter burst time for P5: 67
+Enter burst time for P6: 12
+Enter burst time for P7: 13
+Enter time quantum: 3
+
+Process BT      WT      TAT
+P1      9       36      45
+P2      8       39      47
+P3      6       24      30
+P4      34      81      115
+P5      67      82      149
+P6      12      56      68
+P7      13      65      78
+2.	Write a shell script to display running processes using ps and display the top processes using ps or top.
+OUTPUT
+Running Processes:
+    PID TTY          TIME CMD
+   3492 pts/6    00:00:00 bash
+   3632 pts/6    00:00:00 process.sh
+   3633 pts/6    00:00:00 ps
+
+Top 5 Processes by CPU Usage:
+    PID COMMAND         %CPU
+     88 systemd-udevd    0.0
+      1 systemd          0.0
+     44 systemd-journal  0.0
+   3447 bash             0.0
+   3492 bash             0.0
+
+Process Monitoring using top:
+top - 04:08:35 up  2:55,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  43 total,   1 running,  42 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7772.6 total,   6982.3 free,    624.2 used,    326.0 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7148.5 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   24296  15368  11492 S   0.0   0.2   0:01.40 systemd
+      2 root      20   0    3180   2208   2072 S   0.0   0.0   0:00.01 init-sy+
+      7 root      20   0    3180   2048   1940 S   0.0   0.0   0:00.00 init
