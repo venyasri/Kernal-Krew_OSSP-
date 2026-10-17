@@ -1,0 +1,25 @@
+1.	Write a C program to display the Process ID (PID) and Parent Process ID (PPID) using getpid() and getppid(), and create a child process using fork() to display parent and child process details. 
+OUTPUT
+Before fork():
+Process ID (PID): 1200
+Parent Process ID (PPID): 900
+
+Parent Process:
+PID: 1200
+PPID: 900
+Child PID: 1201
+
+Child Process:
+PID: 1201
+PPID: 1200
+2.	Write a C program to implement FCFS (First Come First Serve) CPU scheduling and calculate waiting time and turnaround time.
+OUTPUT
+Enter number of processes: 3
+Enter burst time for P1: 5
+Enter burst time for P2: 3
+Enter burst time for P3: 2
+
+Process Burst Time  Waiting Time  Turnaround Time
+P1      5           0             5
+P2      3           5             8
+P3      2           8             10
